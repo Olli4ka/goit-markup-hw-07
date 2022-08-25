@@ -109,8 +109,7 @@ button {
 .page-navigation {
   display: flex;
 }
-
-.logo {
+.page-navigation .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -134,11 +133,7 @@ button {
   transition: color 250ms var(--timing-function);
   padding-bottom: 32px;
 }
-
-.site-nav a:hover,
-.auth-nav a:hover,
-.site-nav a:focus,
-.auth-nav a:focus {
+.site-nav a:hover, .site-nav a:focus {
   cursor: pointer;
   color: var(--accent-color);
 }
@@ -147,11 +142,6 @@ button {
   position: relative;
   color: var(--accent-color);
 }
-
-.site-nav {
-  position: relative;
-}
-
 .current::after {
   content: "";
   position: absolute;
@@ -164,6 +154,15 @@ button {
   border-radius: 2px;
 }
 
+.site-nav {
+  position: relative;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
 .auth-nav a {
   font-weight: 500;
   line-height: 1.14;
@@ -171,13 +170,9 @@ button {
   color: var(--color-text);
   transition: color 250ms var(--timing-function);
 }
-
-.site-nav {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin: 0 auto;
-  gap: 50px;
+.auth-nav a:hover, .auth-nav a:focus {
+  cursor: pointer;
+  color: var(--accent-color);
 }
 
 .auth-nav {
@@ -186,16 +181,13 @@ button {
   gap: 50px;
 }
 
-.header-icon {
-  fill: currentColor;
-}
-
 .header-envelope,
 .header-smartphone {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  fill: currentColor;
 }
 
 .banner {
