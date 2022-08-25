@@ -1,0 +1,48 @@
+.banner {
+	background-color: var(--color-fon-banner);
+	padding-top: 200px;
+	padding-bottom: 200px;
+	height: 600px;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(var(--color-gradient-hero), var(--color-gradient-hero)), url(../images/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.banner_title {
+	margin-top: 0;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--main-title-color);
+	max-width: 696px;
+}
+.banner_button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	display: flex;
+	align-items: center;
+	padding: 10px 32px;
+	cursor: pointer;
+	letter-spacing: 0.06em;
+	color: var(--main-title-color);
+	background-color: var(--accent-color);
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+}
+.banner_button:hover,
+.banner_button:focus {
+	color: var(--main-title-color);
+	background-color: var(--main-button-accent);
+}
