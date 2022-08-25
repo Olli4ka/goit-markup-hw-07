@@ -203,7 +203,6 @@ button {
   background-position: center;
   background-size: cover;
 }
-
 .banner_title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -218,7 +217,6 @@ button {
   color: var(--main-title-color);
   max-width: 696px;
 }
-
 .banner_button {
   font-weight: 700;
   font-size: 16px;
@@ -235,9 +233,7 @@ button {
   margin-right: auto;
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
-
-.banner_button:hover,
-.banner_button:focus {
+.banner_button:hover, .banner_button_button:focus {
   color: var(--main-title-color);
   background-color: var(--main-button-accent);
 }
