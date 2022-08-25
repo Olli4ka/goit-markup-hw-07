@@ -755,9 +755,18 @@ address a address a:focus {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
 }
-
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  background-color: var(--main-title-color);
+  color: var(--color-titles);
 }
 
 .close {
@@ -772,14 +781,9 @@ address a address a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.icon-close {
   transition: fill 250ms var(--timing-function);
 }
-
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   fill: var(--accent-color);
 }
 
@@ -793,25 +797,12 @@ address a address a:focus {
   overflow: hidden;
 }
 
-.modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 12px;
-  background-color: var(--main-title-color);
-  color: var(--color-titles);
-}
-
 .input-field {
   margin-bottom: 10px;
 }
-
 .input-field-coment {
   margin-bottom: 20px;
 }
-
 .input-field-che {
   margin-bottom: 30px;
 }
@@ -828,9 +819,7 @@ address a address a:focus {
   padding-left: 42px;
   transition: border 250ms var(--timing-function);
 }
-
-.form-input:focus,
-.form-input:hover {
+.form-input:focus, .form-input:hover {
   outline-color: var(--accent-color);
 }
 
@@ -865,7 +854,6 @@ address a address a:focus {
   border-radius: 4px;
   resize: none;
 }
-
 .modal-text::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -873,7 +861,6 @@ address a address a:focus {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-text:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -881,7 +868,6 @@ address a address a:focus {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-text::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -950,9 +936,7 @@ address a address a:focus {
   margin-right: auto;
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
-
-.modal-button:hover,
-.modal-button:focus {
+.modal-button:hover, .modal-button:focus {
   color: var(--main-title-color);
   background-color: var(--main-button-accent);
 }/*# sourceMappingURL=main.css.map */
