@@ -2,12 +2,12 @@
 	padding-top: 94px;
 	padding-bottom: 94px;
 
-	&_list {
+	&__list {
 		display: flex;
 		gap: 30px;
 		background-color: var(--main-title-color);
 	}
-	&_icon {
+	&__icon {
 		width: 270px;
 		height: 120px;
 		background: var(--color-fon);
@@ -17,7 +17,7 @@
 		align-items: center;
 		justify-content: center;
 	}
-	&_title {
+	&__title {
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 1.14;
@@ -26,7 +26,7 @@
 		margin-top: 0;
 		margin-bottom: 10px;
 	}
-	&_text {
+	&__text {
 		font-weight: 400;
 		line-height: 1.7;
 		color: var(--color-text);

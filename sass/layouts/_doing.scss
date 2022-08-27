@@ -2,7 +2,7 @@
 	background-color: var(--main-title-color);
 	padding-bottom: 94px;
 
-	&_title {
+	&__title {
 		margin-bottom: 50px;
 
 		font-weight: 700;
@@ -13,14 +13,14 @@
 	}
 }
 
-.doing_list {
+.doing__list {
 	display: flex;
 	gap: 30px;
 
-	&_img {
+	.doing__img {
 		position: relative;
 	}
-	&_overlay {
+	.doing__overlay {
 		position: absolute;
 		bottom: 0;
 		right: 0;
@@ -31,31 +31,7 @@
 		padding-bottom: 27px;
 		background: rgba(47, 48, 58, 0.8);
 	}
-	&_text {
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 1.14;
-		text-align: center;
-		letter-spacing: 0.03em;
-		text-transform: uppercase;
-
-		color: var(--main-title-color);
-	}
-	.doing_img {
-		position: relative;
-	}
-	.doing_overlay {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-
-		width: 370px;
-		height: 70px;
-		padding-top: 27px;
-		padding-bottom: 27px;
-		background: rgba(47, 48, 58, 0.8);
-	}
-	.doing_text {
+	.doing__text {
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 1.14;

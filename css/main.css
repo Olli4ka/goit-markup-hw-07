@@ -203,7 +203,7 @@ button {
   background-position: center;
   background-size: cover;
 }
-.banner_title {
+.banner__title {
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
@@ -217,7 +217,7 @@ button {
   color: var(--main-title-color);
   max-width: 696px;
 }
-.banner_button {
+.banner__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -233,7 +233,7 @@ button {
   margin-right: auto;
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
-.banner_button:hover, .banner_button_button:focus {
+.banner__button:hover, .banner__button_button:focus {
   color: var(--main-title-color);
   background-color: var(--main-button-accent);
 }
@@ -242,12 +242,12 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.features_list {
+.features__list {
   display: flex;
   gap: 30px;
   background-color: var(--main-title-color);
 }
-.features_icon {
+.features__icon {
   width: 270px;
   height: 120px;
   background: var(--color-fon);
@@ -257,7 +257,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-.features_title {
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -266,7 +266,7 @@ button {
   margin-top: 0;
   margin-bottom: 10px;
 }
-.features_text {
+.features__text {
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-text);
@@ -276,7 +276,7 @@ button {
   background-color: var(--main-title-color);
   padding-bottom: 94px;
 }
-.doing_title {
+.doing__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -285,14 +285,14 @@ button {
   color: var(--color-titles);
 }
 
-.doing_list {
+.doing__list {
   display: flex;
   gap: 30px;
 }
-.doing_list_img {
+.doing__list .doing__img {
   position: relative;
 }
-.doing_list_overlay {
+.doing__list .doing__overlay {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -302,29 +302,7 @@ button {
   padding-bottom: 27px;
   background: rgba(47, 48, 58, 0.8);
 }
-.doing_list_text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-title-color);
-}
-.doing_list .doing_img {
-  position: relative;
-}
-.doing_list .doing_overlay {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 370px;
-  height: 70px;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background: rgba(47, 48, 58, 0.8);
-}
-.doing_list .doing_text {
+.doing__list .doing__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -337,7 +315,7 @@ button {
 .team {
   background-color: var(--color-fon);
 }
-.team_title {
+.team__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -345,22 +323,23 @@ button {
   text-align: center;
   color: var(--color-titles);
 }
-.team_list {
+
+.card {
   display: flex;
   gap: 30px;
 }
-.team_card {
+.card__number {
   background-color: var(--main-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.card_desk {
+.card__desk {
   text-align: center;
   padding: 30px 0;
 }
 
-.card_title {
+.card__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -368,7 +347,7 @@ button {
   color: var(--color-titles);
 }
 
-.card_text {
+.card__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -376,13 +355,12 @@ button {
   margin-bottom: 16px;
 }
 
-.card_contacts {
+.contacts {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-
-.contacts_link {
+.contacts__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -393,17 +371,21 @@ button {
   color: var(--color-soc-icons);
   transition: background-color 250ms var(--timing-function);
 }
-.contacts_link:hover, .contacts_link:focus {
+.contacts__link:hover, .contacts__link:focus {
   background-color: var(--accent-color);
   color: var(--main-title-color);
 }
 
-.contacts_icon {
+.contacts__icon {
   fill: currentColor;
   transition: color 250ms var(--timing-function);
 }
 
-.clients-title {
+.clients {
+  background-color: var(--main-title-color);
+  padding-bottom: 94px;
+}
+.clients__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -417,8 +399,7 @@ button {
   justify-content: center;
   gap: 30px;
 }
-
-.clients-logo-link {
+.clients-list__logo {
   width: 170px;
   height: 92px;
   border: 1px solid var(--color-soc-icons);
@@ -428,13 +409,13 @@ button {
   color: var(--color-soc-icons);
   transition: color 250ms var(--timing-function);
 }
-.clients-logo-link:hover, .clients-logo-link:focus {
+.clients-list__logo:hover, .clients-list__logo:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   color: var(--accent-color);
 }
 
-.clients-logo-icon {
+.clients-list__logo-icon {
   fill: currentColor;
 }
 
@@ -640,14 +621,11 @@ address a address a:focus {
   padding-bottom: 16px;
   margin-bottom: 34px;
 }
-
-.filers-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filters-item {
-  padding: 6px 22px;
   border: 1px solid var(--color-border);
+}
+.filters-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .cards-list {
@@ -667,9 +645,7 @@ address a address a:focus {
   display: block;
   transition: box-shadow 250ms var(--timing-function);
 }
-
-.card-link:hover,
-.card-link:focus {
+.card-link:hover, .card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -698,7 +674,6 @@ address a address a:focus {
   transition: transform 250ms var(--timing-function);
   overflow: auto;
 }
-
 .card-link:hover .card-about {
   transform: translateY(0);
 }
