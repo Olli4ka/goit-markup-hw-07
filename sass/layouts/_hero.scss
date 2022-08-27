@@ -12,29 +12,22 @@
 	background-size: cover;
 
 	&__title {
+		@include font(900, 44px, 1.36, 0.06em);
+		text-transform: uppercase;
 		margin-top: 0;
 		margin-bottom: 30px;
 		margin-left: auto;
 		margin-right: auto;
-		font-weight: 900;
-		font-size: 44px;
-		line-height: 1.36;
 		text-align: center;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
-		color: var(--main-title-color);
 		max-width: 696px;
+		color: var(--main-title-color);
 	}
 
 	&__button {
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 1.88;
-		display: flex;
-		align-items: center;
+		@include font(700, 16px, 1.88, 0.06em);
+		@extend %aglin-list;
 		padding: 10px 32px;
 		cursor: pointer;
-		letter-spacing: 0.06em;
 		color: var(--main-title-color);
 		background-color: var(--accent-color);
 		border-radius: 4px;

@@ -5,11 +5,9 @@
 }
 .logo-footer {
 	font-family: "Raleway", sans-serif;
+	@include font(700, 26px, 1.19, 0.03em);
 	display: block;
 	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
 	color: var(--accent-color);
 	margin-bottom: 20px;
 }
@@ -24,8 +22,7 @@
 	margin-right: 70px;
 }
 .address {
-	font-weight: 400;
-	line-height: 1.7;
+	@include font(null, 14px, 1.7, 0.03em);
 	font-style: normal;
 }
 
@@ -50,10 +47,7 @@ address a {
 }
 
 .add {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
+	@include font(700, 14px, 1.14, 0.03em);
 	text-transform: uppercase;
 	color: var(--main-title-color);
 	margin-bottom: 20px;
@@ -70,8 +64,7 @@ address a {
 	height: 44px;
 	border-radius: 50%;
 	background-color: #ffffff10;
-	display: flex;
-	align-items: center;
+	@extend %aglin-list;
 	justify-content: center;
 
 	transition: background-color 250ms var(--timing-function);
@@ -85,29 +78,20 @@ address a {
 	margin-left: auto;
 
 	.subscribe {
-		display: block;
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 1.14;
-		letter-spacing: 0.03em;
+		@include font(700, 14px, 1.14, 0.03em);
 		text-transform: uppercase;
+		display: block;
 		margin-bottom: 20px;
-
 		color: var(--main-title-color);
 	}
 }
-
 .subscribe-form {
 	display: flex;
 	gap: 12px;
 
 	.subscribe-button {
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 1.88;
+		@include font(700, 16px, 1.88, 0.06em);
 		padding: 10px 28px;
-		letter-spacing: 0.06em;
-
 		color: var(--main-title-color);
 		background-color: var(--accent-color);
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -115,8 +99,7 @@ address a {
 
 		margin-left: auto;
 		margin-right: auto;
-		display: flex;
-		align-items: center;
+		@extend %aglin-list;
 		justify-content: center;
 		gap: 10px;
 	}
@@ -130,23 +113,13 @@ address a {
 	padding-left: 16px;
 	background-color: transparent;
 
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.25;
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.03em;
-
+	@include font(null, 16px, 1.25, 0.03em);
+	@extend %aglin-list;
 	color: rgba(255, 255, 255, 0.6);
 
 	.subscribe-input::placeholder {
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 1.25;
-		display: flex;
-		align-items: center;
-		letter-spacing: 0.03em;
-
+		@include font(null, 16px, 1.25, 0.03em);
+		@extend %aglin-list;
 		color: rgba(255, 255, 255, 0.6);
 	}
 }

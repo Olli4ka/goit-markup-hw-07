@@ -3,10 +3,7 @@
 
 	&__title {
 		margin-bottom: 50px;
-
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 1.16;
+		@include font(700, 36px, 1.16, 0.03em);
 		text-align: center;
 		color: var(--color-titles);
 	}
@@ -29,12 +26,11 @@
 }
 .card__title {
 	margin-bottom: 10px;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.2;
+	@include font(500, 16px, 1.2, 0.03em);
 	color: var(--color-titles);
 }
 .card__text {
+	@include font(null, 16px, 1.2, 0.03em);
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.2;
@@ -50,8 +46,7 @@
 		height: 44px;
 		border-radius: 50%;
 		background-color: var(--main-title-color);
-		display: flex;
-		align-items: center;
+		@extend %aglin-list;
 		justify-content: center;
 		color: var(--color-soc-icons);
 

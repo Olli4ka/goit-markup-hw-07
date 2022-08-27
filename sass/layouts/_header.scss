@@ -3,17 +3,14 @@
 	border-bottom: 1px solid var(--color-header-line);
 }
 .page-header .container {
-	display: flex;
-	align-items: center;
+	@extend %aglin-list;
 }
 .page-navigation {
 	display: flex;
 	.logo {
 		font-family: "Raleway", sans-serif;
 		font-style: normal;
-		font-weight: 700;
-		font-size: 26px;
-		line-height: 1.19;
+		@include font(700, 26px, 1.19, 0.03em);
 		color: var(--accent-color);
 		padding-top: 24px;
 		padding-bottom: 25px;
@@ -25,10 +22,8 @@
 	color: var(--color-black);
 }
 
-.site-nav a {
-	font-weight: 500;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+.site-nav-link {
+	@include font(500, 14px, 1.14, 0.02em);
 	color: var(--color-titles);
 	transition: color 250ms var(--timing-function);
 	padding-bottom: 32px;
@@ -66,9 +61,8 @@
 }
 
 .auth-nav a {
-	font-weight: 500;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	@include font(500, 14px, 1.14, 0.02em);
+
 	color: var(--color-text);
 	transition: color 250ms var(--timing-function);
 
@@ -87,8 +81,7 @@
 
 .header-envelope,
 .header-smartphone {
-	display: flex;
-	align-items: center;
+	@extend %aglin-list;
 	justify-content: center;
 	gap: 10px;
 	fill: currentColor;

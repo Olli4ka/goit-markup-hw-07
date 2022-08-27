@@ -13,20 +13,18 @@
 		background: var(--color-fon);
 		border-radius: 4px;
 		margin-bottom: 30px;
-		display: flex;
-		align-items: center;
+		@extend %aglin-list;
 		justify-content: center;
 	}
 	&__title {
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 1.14;
+		@include font(700, 14px, 1.14, 0.03em);
 		text-transform: uppercase;
 		color: var(--color-titles);
 		margin-top: 0;
 		margin-bottom: 10px;
 	}
 	&__text {
+		@include font(null, 14px, 1.7, 0.03em);
 		font-weight: 400;
 		line-height: 1.7;
 		color: var(--color-text);

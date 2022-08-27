@@ -4,9 +4,8 @@
 
 	&__title {
 		margin-bottom: 50px;
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 42px;
+		@include font(700, 36px, 1.16, 0.03em);
+
 		text-align: center;
 		color: var(--color-titles);
 	}
@@ -22,8 +21,7 @@
 		height: 92px;
 		border: 1px solid var(--color-soc-icons);
 
-		display: flex;
-		align-items: center;
+		@extend %aglin-list;
 		justify-content: center;
 		color: var(--color-soc-icons);
 

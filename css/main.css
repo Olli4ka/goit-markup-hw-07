@@ -81,6 +81,22 @@ img {
   overflow: hidden;
 }
 
+.subscribe-input .subscribe-input::-moz-placeholder {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-input .subscribe-input:-ms-input-placeholder {
+  display: flex;
+  align-items: center;
+}
+
+.modal-button, .checkbox-text span, .checkbox-text, .close, .subscribe-input .subscribe-input::placeholder, .subscribe-input, .subscribe-form .subscribe-button, .sotial-links, .clients-list__logo, .contacts__link, .features__icon, .banner__button, .header-envelope,
+.header-smartphone, .page-header .container {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -101,11 +117,6 @@ button {
   border-bottom: 1px solid var(--color-header-line);
 }
 
-.page-header .container {
-  display: flex;
-  align-items: center;
-}
-
 .page-navigation {
   display: flex;
 }
@@ -115,6 +126,7 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
   padding-top: 24px;
   padding-bottom: 25px;
@@ -125,15 +137,16 @@ button {
   color: var(--color-black);
 }
 
-.site-nav a {
+.site-nav-link {
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-titles);
   transition: color 250ms var(--timing-function);
   padding-bottom: 32px;
 }
-.site-nav a:hover, .site-nav a:focus {
+.site-nav-link:hover, .site-nav-link:focus {
   cursor: pointer;
   color: var(--accent-color);
 }
@@ -165,6 +178,7 @@ button {
 
 .auth-nav a {
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-text);
@@ -183,8 +197,6 @@ button {
 
 .header-envelope,
 .header-smartphone {
-  display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
   fill: currentColor;
@@ -204,28 +216,26 @@ button {
   background-size: cover;
 }
 .banner__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--main-title-color);
   max-width: 696px;
+  color: var(--main-title-color);
 }
 .banner__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
+  letter-spacing: 0.06em;
   padding: 10px 32px;
   cursor: pointer;
-  letter-spacing: 0.06em;
   color: var(--main-title-color);
   background-color: var(--accent-color);
   border-radius: 4px;
@@ -253,20 +263,22 @@ button {
   background: var(--color-fon);
   border-radius: 4px;
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 .features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-titles);
   margin-top: 0;
   margin-bottom: 10px;
 }
 .features__text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-text);
@@ -278,6 +290,10 @@ button {
 }
 .doing__title {
   margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -306,8 +322,8 @@ button {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
 }
@@ -320,6 +336,7 @@ button {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--color-titles);
 }
@@ -344,10 +361,14 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
   color: var(--color-titles);
 }
 
 .card__text {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -365,8 +386,6 @@ button {
   height: 44px;
   border-radius: 50%;
   background-color: var(--main-title-color);
-  display: flex;
-  align-items: center;
   justify-content: center;
   color: var(--color-soc-icons);
   transition: background-color 250ms var(--timing-function);
@@ -389,7 +408,8 @@ button {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--color-titles);
 }
@@ -403,8 +423,6 @@ button {
   width: 170px;
   height: 92px;
   border: 1px solid var(--color-soc-icons);
-  display: flex;
-  align-items: center;
   justify-content: center;
   color: var(--color-soc-icons);
   transition: color 250ms var(--timing-function);
@@ -427,11 +445,12 @@ button {
 
 .logo-footer {
   font-family: "Raleway", sans-serif;
-  display: block;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  display: block;
+  font-style: normal;
   color: var(--accent-color);
   margin-bottom: 20px;
 }
@@ -450,8 +469,9 @@ button {
 }
 
 .address {
-  font-weight: 400;
+  font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 
@@ -501,8 +521,6 @@ address a address a:focus {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.062745098);
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: background-color 250ms var(--timing-function);
 }
@@ -515,12 +533,12 @@ address a address a:focus {
   margin-left: auto;
 }
 .footer-sub .subscribe {
-  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: block;
   margin-bottom: 20px;
   color: var(--main-title-color);
 }
@@ -533,16 +551,14 @@ address a address a:focus {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  padding: 10px 28px;
   letter-spacing: 0.06em;
+  padding: 10px 28px;
   color: var(--main-title-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
 }
@@ -555,38 +571,26 @@ address a address a:focus {
   border-radius: 4px;
   padding-left: 16px;
   background-color: transparent;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe-input .subscribe-input::-moz-placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe-input .subscribe-input:-ms-input-placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe-input .subscribe-input::placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -647,9 +651,9 @@ address a address a:focus {
   border-top: none;
 }
 .cards .cards-content .cards-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.03em;
   color: var(--color-text);
 }
 .cards .cards-content .cads-name {
@@ -682,7 +686,6 @@ address a address a:focus {
   padding-top: 63px;
   padding-bottom: 63px;
   background: rgba(33, 150, 243, 0.9);
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -723,9 +726,9 @@ address a address a:focus {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 12px;
   background-color: var(--main-title-color);
   color: var(--color-titles);
@@ -740,9 +743,7 @@ address a address a:focus {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
-  display: flex;
   justify-content: center;
-  align-items: center;
   transition: fill 250ms var(--timing-function);
 }
 .close:hover, .close:focus {
@@ -798,7 +799,6 @@ address a address a:focus {
 }
 
 .input-title {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -817,6 +817,9 @@ address a address a:focus {
   resize: none;
 }
 .modal-text::-moz-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -824,6 +827,9 @@ address a address a:focus {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-text:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -831,6 +837,9 @@ address a address a:focus {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-text::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -839,15 +848,12 @@ address a address a:focus {
 }
 
 .checkbox-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   color: var(--color-text);
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .dogovor {
@@ -861,8 +867,6 @@ address a address a:focus {
   border: 2px solid var(--color-titles);
   border-radius: 3px;
   margin-right: 8.38px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: background-color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
@@ -885,11 +889,9 @@ address a address a:focus {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  padding: 10px 52px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 52px;
+  text-align: center;
   color: var(--main-title-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
