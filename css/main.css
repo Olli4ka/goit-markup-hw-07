@@ -628,33 +628,50 @@ address a address a:focus {
   margin-right: 8px;
 }
 
-.cards-list {
+.cards {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
+.cards-link {
+  display: block;
+  transition: box-shadow 250ms var(--timing-function);
+}
+.cards-link:hover, .cards-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.cards .cards-content {
+  padding: 20px 24px;
+  border: 1px solid var(--color-border);
+  border-top: none;
+}
+.cards .cards-content .cards-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+.cards .cards-content .cads-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-titles);
+  margin-bottom: 4px;
+}
 
-.cards-list > .cards-item {
+.cards > .cards-item {
   flex-basis: calc(33.3333333333% - var(--card-set-gap));
   margin-bottom: var(--card-set-gap);
   margin-left: var(--card-set-gap);
 }
 
-.card-link {
-  display: block;
-  transition: box-shadow 250ms var(--timing-function);
-}
-.card-link:hover, .card-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card-thumb {
+.cards-thumb {
   position: relative;
   overflow: hidden;
 }
-
-.card-about {
+.cards-thumb .cards-about {
   position: absolute;
   top: 0;
   left: 0;
@@ -674,30 +691,8 @@ address a address a:focus {
   transition: transform 250ms var(--timing-function);
   overflow: auto;
 }
-.card-link:hover .card-about {
+.cards-link:hover .cards-thumb .cards-about {
   transform: translateY(0);
-}
-
-.cads {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--color-titles);
-  margin-bottom: 4px;
-}
-
-.cards-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.9;
-  color: var(--color-text);
-}
-
-.card-content {
-  padding: 20px 24px;
-  border: 1px solid var(--color-border);
-  border-top: none;
 }
 
 .backdrop {
