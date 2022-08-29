@@ -40,8 +40,8 @@
 }
 address a {
 	transition: color 250ms var(--timing-function);
-	address a:hover,
-	address a:focus {
+	&:hover,
+	&:focus {
 		color: var(--accent-color);
 	}
 }
@@ -68,8 +68,8 @@ address a {
 	justify-content: center;
 
 	transition: background-color 250ms var(--timing-function);
-	.sotial-links:hover,
-	.sotial-links:focus {
+	&:hover,
+	&:focus {
 		background-color: var(--accent-color);
 	}
 }

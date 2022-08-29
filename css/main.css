@@ -493,8 +493,7 @@ button {
 address a {
   transition: color 250ms var(--timing-function);
 }
-address a address a:hover,
-address a address a:focus {
+address a:hover, address a:focus {
   color: var(--accent-color);
 }
 
@@ -524,8 +523,7 @@ address a address a:focus {
   justify-content: center;
   transition: background-color 250ms var(--timing-function);
 }
-.sotial-links .sotial-links:hover,
-.sotial-links .sotial-links:focus {
+.sotial-links:hover, .sotial-links:focus {
   background-color: var(--accent-color);
 }
 
